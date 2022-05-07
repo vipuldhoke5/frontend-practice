@@ -1,0 +1,27 @@
+<!-- Program fot print the left rotated array after k opearations.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program14</title>
+</head>
+
+<body>
+    <script>
+        function leftRotate(arr, n, k) {
+            let mod = k % n;
+            for (let i = 0; i < n; i++)
+                document.write((arr[(mod + i) % n]) + " ");
+        }
+        let arr = [1, 2, 3, 4, 5, 6, 7];
+        let n = 7;
+        let k = 3;
+        leftRotate(arr, n, k);
+    </script>
+</body>
+
+</html>

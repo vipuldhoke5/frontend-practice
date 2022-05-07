@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            function bitonicGenerator(arr,n)
+            { 
+                let evenArr = [];
+                let oddArr = [];
+                for (let i = 0; i < n; i++) {
+                    if (i % 2 != 1) {
+                        evenArr.push(arr[i]);
+                    }
+                    else {
+                        oddArr.push(arr[i]);
+                    }
+                }
+                evenArr.sort(function(a,b){return a-b;});
+                oddArr.sort(function(a,b){return b-a;});
+        
+                let i = 0;
+                for (let j = 0; j < evenArr.length; j++) {
+                    arr[i++] = evenArr[j];
+                }
+                for (let j = 0; j < oddArr.length; j++) {
+                    arr[i++] = oddArr[j];
+                }
+            }
+            let arr=[3, 9, 1, 44, 6 ];
+            let n = arr.length;
+            bitonicGenerator(arr, n);
+            for (let i = 0; i < n; i++) {
+                console.log(arr[i] + " ");
+            }
+        </script>
+        
+</body>
+</html>

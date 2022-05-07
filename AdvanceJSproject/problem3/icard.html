@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="icard.css">
+</head>
+<body>
+	<section id="student">
+        <h1>ID card generator</h1>
+		
+        <div id="student_info"> 
+			<div class="box_one">
+				<h3><strong>Enter Student Details</strong> </h3>
+                <div class="input">
+					<label>Enter Name:</label><br>
+					<input type="text" id="addName" placeholder="Enter name here">
+				</div>
+				<div class="input">
+					<label>Enter College Name:</label><br>
+					<input type="text" id="addCollege" placeholder="Enter colege name">
+				</div>
+				<div class="input">
+					<label>Enter Location:</label><br>
+					<input type="text" id="addLocation" placeholder="Enter location">
+					<!-- placeholder means hint -->
+				</div>
+				<div class="input">
+					<label for="fileupload">Upload Profile</label><br>
+					<input type="file" id="file" accept="image/*" onchange="loadImage(event)"> 
+					<!-- input type="file" means we only upload file, accept="image/*"=only accept the images in all format -->
+					<img src="user.png" class="imgDisp" id="imgDisp" onchange="loadImage(event)">
+				</div>
+					<div class="input">
+					<button id="addBtn">Generate Card</button>
+				</div>            
+			</div>
+
+            <div class="box_two">
+				<h3>Generate ID card</h3>
+				<div class="card" >
+					<img src="user.png" id="imgDisplayed" onchange="loadImage(event)">
+				
+					<div class="detail" id="idStudent"></div>
+	   			</div>
+			</div>
+        </div>
+    </section>
+
+	<script src="icard.js"></script>
+</body>
+</html>

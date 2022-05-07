@@ -1,0 +1,105 @@
+#student {
+    margin-top: 40px;
+    margin-left: 400px;
+    width: 50%;
+}
+
+#student h1 {
+    text-align: center;
+    font-size: 30px;
+    height: 40px;
+    width: 99%;
+    background-color: rgb(44, 57, 179);
+    color: white;
+    /* border-radius: 5px; */
+    margin-left: -10px;
+}
+
+#student_info {
+    margin: 0px 20px;
+    display: flex;
+}
+
+#student_info h3 {
+    color: black;
+}
+
+#student_info .box_one h3 {
+    color: blue;
+    text-align: center;
+}
+
+#student_info .box_one {
+    border: 0.1px solid grey;
+    padding: 10px;
+    /* border-radius: 5px; */
+    background: #f2f2f2;
+    color: black;
+    width: 500px;
+    height: 400px;
+    margin-left: -30px;
+    margin-top: -25px;
+}
+
+#student_info .box_one .input {
+    margin-left: 50px;
+    /* display:block; */
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+#student_info .box_one .input input {
+    width: 70%;
+    padding: 0.35rem;
+    /* border-radius: 5px; */
+    font-size: 1rem;
+    background-color: lightgray;
+}
+
+#student_info .box_one .input .imgDisp {
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    margin-left: 30px;
+}
+
+#student_info .box_two {
+    border: 0.1px solid grey;
+    padding: 10px;
+    /* border-radius: 5px; */
+    background: #f2f2f2;
+    color: black;
+    width: 500px;
+    margin-top: -25px;
+    display: flex;
+    flex-direction: column;
+}
+
+#student_info .box_two h3 {
+    text-align: center;
+    margin-top: 80px;
+}
+
+#student_info .box_two .card {
+    border: 0.1px solid wheat;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 130px;
+}
+
+#student_info .box_two .card img {
+    height: 80px;
+    margin: 20px 20px 20px 20px;
+    float: left;
+}
+
+#student_info .box_two .card .detail {
+    margin-top: 15px;
+    float: left;
+}
+#addBtn{
+    background-color: rgb(43, 86, 228);
+    border-radius: 5px;
+}

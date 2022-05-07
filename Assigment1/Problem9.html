@@ -1,0 +1,33 @@
+<!-- Write a program to find all of the roots of the quadratic. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem9</title>
+</head>
+
+<body>
+    <script>
+let root1, root2;
+let a = prompt("Enter the first number: ");
+let b = prompt("Enter the second number: ");
+let c = prompt("Enter the third number: ");
+let discriminant = b * b - 4 * a * c;
+if (discriminant > 0) {
+    root1 = (-b + Math.sqrt(discriminant)) / (2 * a).toFixed(2);
+    root2 = (-b - Math.sqrt(discriminant)) / (2 * a).toFixed(2);
+    console.log(`${root1} and ${root2}`);
+}
+else { (discriminant == 0) 
+    root1 = root2 = -b / (2 * a);
+    console.log(`${root1} and ${root2}`);
+}
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+figure {
+    float: right;
+}
+
+.menu {
+    background-color: #fcd34d;
+}
+
+
+input[type=button] {
+    background-color: #fcd34d;
+    color: white;
+    border: #f7c932;
+    border-radius: 23px;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.col {
+    text-align: center;
+}
+
+#p1 {
+    font-size: 35px;
+    margin-top: 120px;
+}
+
+.generic {
+    background-color: #fcd34d;
+    height: 380px;
+    margin-top: 200px;
+    padding-top: 2px;
+    border-bottom: black;
+
+}
+
+i {
+    color: white;
+    background-color: black;
+    margin-top: 0px;
+    border: none;
+    width: 300px;
+    margin-left: 0px;
+    padding: 0px;
+
+}
+
+button {
+    border: none;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.imp{
+    margin-left: 40px;
+}
+.navbar-brand{
+    margin-left: 20px;
+}
+.nav-item{
+    font-weight: 400;
+    margin-right: 20px;
+}
+.mb-5{
+    font-weight: 400;
+}
+.lead{
+    font-weight: 400;
+}

@@ -1,0 +1,53 @@
+<!-- Program for Evaluate the given expression and print the result. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program15</title>
+</head>
+
+<body>
+    <script>
+        function evaluatePostfix(exp) {
+            let stack = [];
+            for (let i = 0; i < exp.length; i++) {
+                let c = exp[i];
+                if (!isNaN(parseInt(c)))
+                    stack.push(c.charCodeAt(0) - '0'.charCodeAt(0));
+                else {
+                    let val1 = stack.pop();
+                    let val2 = stack.pop();
+
+                    switch (c) {
+                        case '+':
+                            stack.push(val2 + val1);
+                            break;
+
+                        case '-':
+                            stack.push(val2 - val1);
+                            break;
+
+                        case '/':
+                            stack.push(val2 / val1);
+                            break;
+
+                        case '*':
+                            stack.push(val2 * val1);
+                            break;
+                    }
+                }
+            }
+            return stack.pop();
+        }
+
+        let exp = "531*+9-";
+        console.log("postfix evaluation: " + evaluatePostfix(exp));
+    </script>
+
+</body>
+
+</html>
